@@ -1,0 +1,178 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins 
+{
+	text-decoration: none;
+}
+del 
+{
+	text-decoration: line-through;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Responsive template */
+/* Desktop version */
+.container
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row
+{
+	width:100%;
+	max-width: 1250px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.onecol, .twocol
+{
+	margin-right: 3%;
+	float: left;
+	min-height: 1px;
+}
+
+.row .onecol
+{
+	width: 31%;
+}
+
+.row .twocol
+{
+	width: 62%;
+}
+
+.row .threecol
+{
+	width: 100%;
+	float: left;
+}
+
+.last 
+{
+	margin-right: 0px;
+}
+
+img, object, embed 
+{
+	max-width: 100%;
+}
+
+img 
+{
+	height: auto;
+}
+
+/* Tablet version */
+@media only screen and (max-width: 1000px) 
+{
+
+	#wrapper
+	{
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+	
+}
+
+/* Mobile version */
+@media handheld, only screen and (max-width: 500px) 
+{
+
+	#wrapper
+	{
+		font-size: 16px;
+		-webkit-text-size-adjust: none;
+	}
+	
+	.row, #wrapper, .container 
+	{
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol
+	{
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+/* Slider */
+
+
+/* Desktop Version */
+
+
+/* Menu code */
+
+
+
+/* Footer */
+
+
+/* Mobile Version */
+@media handheld, only screen and (max-width: 500px) 
+{
+	
+		
+	
+
+}
