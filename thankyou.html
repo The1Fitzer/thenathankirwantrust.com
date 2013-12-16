@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-        <html>
-                <head>
-                        <title>Thank You</title>
-                        
-                        <link href="thankyou.css" rel="stylesheet" type="text/css" media="screen" />
-                </head>
-                <body>
-                        <div id="wrapper">
-                                <header>
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="menu">
-												<button class="nav-bar"><a href="index.html">HOME</a></button><button class="nav-bar"><a href="index.html">ABOUT NATHAN</a></button><button class="nav-bar"><a href="index.html">BLOG</a></button><button class="nav-bar"><a href="index.html">GALLERY</a></button><button class="nav-bar"><a href="index.html">EVENTS</a></button><button class="nav-bar"><a href="index.html">DONATE</a></button><button class="nav-bar"><a href="index.html">CONTACT US</a></button>
-												</div>       
-                                                </div>
-                                        </div>
-                                        <div class="container">
-                                                <div class="row">
-                                                        
-                                                </div>
-                                        </div>
-                                </header>
-                                <section>
-                                        <div class="container">
-                                                <div class="row">
-													<div class="twocol">
-													<br/><h1>Thank you!<h1><br/><br/>
-														<iframe width="760" height="615" src="http://www.youtube.com/embed/9JTf05c6aE8" allowfullscreen></iframe>         
-													</div>			
-                                                
-													<div class="onecol last">
-													<img src="facebook.png" alt="logo" class="logo"/>
-													<img src="twitter.png" alt="logo" class="logo"/>
-													</div>
-												</div>
-									</div>
-                                </section>
-                                <footer>
-                                        <div class="container">
-                                                <div class="row">
-                                                
-                                                </div>
-                                        </div>
-                                </footer>
-                        </div>
-                </body>
-        </html>
+	<html>
+		<head>
+			<title>Nathan Kirwan Trust Homepage</title>
+			
+			<link href="css/style-home.css" rel="stylesheet" type="text/css" media="screen" />
+			
+			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="js/backstretch.js"></script>
+		</head>
+		<body>
+			
+			<script>
+				$.backstretch("images/background.png");
+			</script>
+			<div id="wrapper">
+				<header>
+					<div class="container">
+						<div class="row threecol last">
+							<div id="logo">
+								<img src="images/banner.png" alt="The Nathan Kirwan Trust Logo and picture banner" />
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<ul id="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="nathan.html">Nathan's Blog</a></li>
+								<li><a href="event.html">Events</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="donate.html">Donate</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<section>
+					<div class="container">
+						<div class="row threecol last" id="thankyou">
+							<img src="images/thankyou.png" alt="We thank you for your donation." />
+						</div>
+					</div>
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row threecol last">
+							<p>&copy; 2013 The Nathan Kirwan Trust</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</body>
+	</html>
