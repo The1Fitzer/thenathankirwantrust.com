@@ -1,136 +1,201 @@
 <!DOCTYPE html>
-        <html>
-                <head>
-                        <title>Photo Gallery</title>
-                        
-                        <link href="gallery.css" rel="stylesheet" type="text/css" media="screen" />
-                <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script src="bjqs.min.js"></script>
-
-<link type="text/css" rel="Stylesheet" href="bjqs.css" />
-<link type="text/css" rel="Stylesheet" href="demo.css" />
-				</head>
-                <body>
-                        <div id="wrapper">
-                                <header>
-                                        <div class="container">
-                                                <div class="row">
-                                              
-												<button class="nav-bar"><a href="index.html">HOME</a></button><button class="nav-bar"><a href="index.html">ABOUT NATHAN</a></button> <button class="nav-bar"><a href="index.html">BLOG </a></button><button class="nav-bar"><a href="index.html">EVENTS </a></button><button class="nav-bar"><a href="index.html">DONATE </a></button><button class="nav-bar"><a href="index.html">CONTACT US</a></button>
-											
-                                                </div>
-                                        </div>
-                                        <div class="container">
-                                                <div class="row">
-                                                        
-                                                </div>
-                                        </div>
-                                </header>
-                                <section>
-                                        <div class="container">
-                                                <div class="row twocol last">
-                                                    <div class="gallery onecol">
-														<div id="slider">
-
-<div id="my-slideshow">
-<ul class="bjqs">
-<li><img src="1.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="2.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="3.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="4.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="5.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="6.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="7.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="8.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-<li><img src="9.jpg" alt="photo" title="Come to Hello World for happy nites!"/></li>
-</ul>
-
-</div>
-<script>
-jQuery(document).ready(function($) {
-    $('#my-slideshow').bjqs({
-        'height' : 200,
-        'width' : 200,
-		'responsive' : true
-
-    });
-});
-
-</script>
-                                                    </div>
-													<div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>	
-													<p>Event One</p>
-													</div>
-													  <div class="onecol last">
-													<img src="facebook.png" alt="logo" class="logo"/>
-													<img src="twitter.png" alt="logo" class="logo"/>
-													</div>		
-                                                </div>
-                                        </div>
-                                        <div class="container">
-                                                <div class="row twocol last">
-                                                       <div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>													
-                                                    <p>Event One</p>
-													</div>
-													<div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>	
-													<p>Event One</p>
-													</div>   
-                                                </div>
-                                        </div>
-										<div class="container">
-                                                <div class="row twocol last">
-                                                       <div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>													
-                                                    <p>Event One</p>
-													</div>
-													<div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>	
-													<p>Event One</p>
-													</div>   
-                                                </div>
-                                        </div>
-										<div class="container">
-                                                <div class="row twocol last">
-                                                       <div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>													
-                                                    <p>Event One</p>
-													</div>
-													<div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>	
-													<p>Event One</p>
-													</div>   
-                                                </div>
-                                        </div>
-                                        <div class="container">
-                                                <div class="row twocol last">
-                                                         <div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>													
-                                                    <p>Event One</p>
-													</div>
-													<div class="gallery onecol">
-														<img src="photo.png" alt="photo"/>	
-													<p>Event One</p>
-													</div>      
-                                              
-												</div>
-                                        </div>
-                                        <div class="container">
-                                                <div class="row">
-                                                        
-                                                </div>
-                                        </div>
-                                </section>
-                                <footer>
-                                        <div class="container">
-                                                <div class="row">
-                                                
-                                                </div>
-                                        </div>
-                                </footer>
-                        </div>
-                </body>
-        </html>
+	<html>
+		<head>
+			<title>Nathan Kirwan Trust Photo Gallery</title>
+			
+			<link href="css/style-gallery.css" rel="stylesheet" type="text/css" media="screen" />
+			
+			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="js/backstretch.js"></script>
+			<script src="js/bjqs-1.3.js"></script>
+		</head>
+		<body>
+			<div class="social">
+				<div>
+				   <form target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr">
+					<input type="hidden" value="_s-xclick" name="cmd">
+					<input type="hidden" value="CQN74L5FC2R38" name="hosted_button_id">
+					<input type="hidden" value="http://nathankirwantrust.com/thankyou.html/" name="return">
+					<input type="image" border="0" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">
+					<img width="1" height="1" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="">
+				   </form>
+				</div>
+			  </div>
+			<script>
+				$.backstretch("images/background.png");
+			</script>
+			<div id="wrapper">
+				<header>
+					<div class="container">
+						<div class="row threecol last">
+							<div id="logo">
+								<img src="images/banner.png" alt="The Nathan Kirwan Trust Logo and picture banner" />
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<ul id="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="nathan.html">Nathan's Blog</a></li>
+								<li><a href="event.html">Events</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="donate.html">Donate</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<section>
+					<div class="container">
+						<div class="row threecol last">
+							<h2>To view more photo albums please go to our <a href="https://www.facebook.com/pages/The-Nathan-Kirwan-Trust/627358123949701?sk=photos_albums" target="_blank" alt="link to facebook">facebook</a> page.</h2>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+						<h1>Shamrock Vintage Car Run</h1>
+								<div id="event1">
+									<ul class="bjqs">
+										<li><img src="images/car/pic1.jpg" alt="Picture 1 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic2.jpg" alt="Picture 2 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic3.jpg" alt="Picture 3 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic4.jpg" alt="Picture 4 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic5.jpg" alt="Picture 5 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic6.jpg" alt="Picture 6 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic7.jpg" alt="Picture 7 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic8.jpg" alt="Picture 8 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic9.jpg" alt="Picture 9 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic10.jpg" alt="Picture 10 of the Shamrock Vintage Car Run Album " /></li>
+										<li><img src="images/car/pic11.jpg" alt="Picture 11 of the Shamrock Vintage Car Run Album " /></li>
+									</ul>
+								</div>
+								<script type="text/javascript">
+									jQuery(document).ready(function($) {
+										$('#event1').bjqs({
+											'height' : 300,
+											'width' : 800,
+											'responsive' : true
+										});
+									});
+								</script>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last"> 
+						<h1>Fitnessworx fun day with World Champion Rob Heffernan</h1>
+							<div id="event2">
+									<ul class="bjqs">
+										<li><img src="images/fun/pic1.jpg" alt="Picture 1 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic2.jpg" alt="Picture 2 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic3.jpg" alt="Picture 3 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic5.jpg" alt="Picture 5 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic6.jpg" alt="Picture 6 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic7.jpg" alt="Picture 7 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic8.jpg" alt="Picture 8 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic9.jpg" alt="Picture 9 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic10.jpg" alt="Picture 10 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic11.jpg" alt="Picture 11 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic12.jpg" alt="Picture 12 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic13.jpg" alt="Picture 13 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+										<li><img src="images/fun/pic14.jpg" alt="Picture 14 of the Fitnessworx fun day with World Champion Rob Heffernan album" /></li>
+									</ul>
+							</div>
+								<script type="text/javascript">
+									jQuery(document).ready(function($) {
+										$('#event2').bjqs({
+											'height' : 300,
+											'width' : 800,
+											'responsive' : true
+										});
+									});
+								</script>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<h1>Ned Wheeler Nostalgia Night</h1>
+							<div id="event3">
+									<ul class="bjqs">
+										<li><img src="images/ned/pic1.jpg" alt="Picture 1 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic2.jpg" alt="Picture 2 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic3.jpg" alt="Picture 3 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic4.jpg" alt="Picture 4 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic5.jpg" alt="Picture 5 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic6.jpg" alt="Picture 6 of the Ned Wheeler Nostalgia Night album" /></li>
+										<li><img src="images/ned/pic7.jpg" alt="Picture 7 of the Ned Wheeler Nostalgia Night album" /></li>
+									</ul>
+							</div>
+								<script type="text/javascript">
+									jQuery(document).ready(function($) {
+										$('#event3').bjqs({
+											'height' : 300,
+											'width' : 800,
+											'responsive' : true
+										});
+									});
+								</script>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<h1>Opera For Nathan</h1>
+							<div id="event4">
+									<ul class="bjqs">
+										<li><img src="images/opera/pic1.jpg" alt="Picture 1 of the Opera For Nathan album" /></li>
+										<li><img src="images/opera/pic2.jpg" alt="Picture 2 of the Opera For Nathan album" /></li>
+										<li><img src="images/opera/pic3.jpg" alt="Picture 3 of the Opera For Nathan album" /></li>
+										<li><img src="images/opera/pic4.jpg" alt="Picture 4 of the Opera For Nathan album" /></li>
+										<li><img src="images/opera/pic5.jpg" alt="Picture 4 of the Opera For Nathan album" /></li>
+									</ul>
+							</div>
+								<script type="text/javascript">
+									jQuery(document).ready(function($) {
+										$('#event4').bjqs({
+											'height' : 300,
+											'width' : 800,
+											'responsive' : true
+										});
+									});
+								</script>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<h1>UCC SAILING REGATTA</h1>
+							<div id="event5">
+									<ul class="bjqs">
+										<li><img src="images/sailing/pic1.jpg" alt="Picture 1 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic2.jpg" alt="Picture 2 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic3.jpg" alt="Picture 3 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic4.jpg" alt="Picture 4 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic5.jpg" alt="Picture 5 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic6.jpg" alt="Picture 6 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic7.jpg" alt="Picture 7 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic8.jpg" alt="Picture 8 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic9.jpg" alt="Picture 9 of the UCC SAILING REGATTA album" /></li>
+										<li><img src="images/sailing/pic10.jpg" alt="Picture 10 of the UCC SAILING REGATTA album" /></li>
+									</ul>
+							</div>
+								<script type="text/javascript">
+									jQuery(document).ready(function($) {
+										$('#event5').bjqs({
+											'height' : 300,
+											'width' : 800,
+											'responsive' : true
+										});
+									});
+								</script>
+						</div>
+					</div>
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row threecol last">
+							<p>&copy; 2013 The Nathan Kirwan Trust</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</body>
+	</html>
