@@ -1,0 +1,382 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins 
+{
+	text-decoration: none;
+}
+del 
+{
+	text-decoration: line-through;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Responsive template */
+/* Desktop version */
+.container
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row
+{
+	width:100%;
+	max-width: 1250px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.onecol, .twocol
+{
+	margin-right: 3%;
+	float: left;
+	min-height: 1px;
+}
+
+.row .onecol
+{
+	width: 31%;
+}
+
+.row .twocol
+{
+	width: 62%;
+}
+
+.row .threecol
+{
+	width: 100%;
+	float: left;
+}
+
+.last 
+{
+	margin-right: 0px;
+}
+
+img, object, embed 
+{
+	max-width: 100%;
+}
+
+img 
+{
+	height: auto;
+}
+
+/* Tablet version */
+@media only screen and (max-width: 1000px) 
+{
+
+	#wrapper
+	{
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+	
+}
+
+/* Mobile version */
+@media handheld, only screen and (max-width: 500px) 
+{
+
+	#wrapper
+	{
+		font-size: 16px;
+		-webkit-text-size-adjust: none;
+	}
+	
+	.row, #wrapper, .container 
+	{
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol
+	{
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+		margin-right:0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+/* Slider */
+
+
+/* Desktop Version */
+body
+{
+	font-family:jura, sans-serif, Verdana;
+	color:#333;
+}
+
+#wrapper
+{
+	width:900px;
+	margin:10px auto;
+	border-radius:15px;
+	overflow:hidden;
+	background-color:#ffffff;
+}
+
+header .container .row 
+{
+	background-color:#ffffff;
+	padding-bottom:10px;
+}
+
+/* Menu code */
+#menu
+{
+	background-color:#ffffff;
+	margin:0 auto;
+	padding:10px 0;
+}
+
+#menu li
+{
+	float:left;
+	padding:5px 0;
+	width:16.6%;
+	text-align:center;
+}
+
+#menu li a
+{
+	text-decoration:none;
+	color:#3EFF05;
+	font-size:22px;
+	font-weight:bold;
+}
+
+#menu li a:hover
+{
+	color:#333333;
+}
+
+
+/* Video */
+#video
+{
+	width:100%;
+	height:400px;
+}
+
+/* Main Content */
+section h1
+{
+	text-align:center;
+	font-size:28px;
+	font-weight:bold;
+}
+
+section p
+{
+	text-align:center;
+	line-height:150%;
+}
+
+/* Contact Form */
+#form
+{
+	margin-top:3%;
+}
+
+#form p
+{
+	margin:10px;
+	line-height:150%;
+	font-size:16px;
+	text-align:right;
+}
+
+#form p label
+{
+	width:400px;
+	line-height:150%;
+	font-size:20px;
+	margin-right:5%;
+}
+
+#form p textarea
+{
+	float:right;
+	width:400px;
+	height:25px;
+	border-radius:3px;
+	margin-right:15%;
+	text-align:center;
+	height:100px;
+}
+
+#form p input
+{
+	clear:both;
+	float:right;
+	width:400px;
+	height:25px;
+	border-radius:3px;
+	margin-right:15%;
+	text-align:center;
+}
+
+#form p select
+{
+	clear:both;
+	float:right;
+	width:404px;
+	height:30px;
+	border-radius:3px;
+	margin-right:40px;
+	text-align:center;
+}
+
+#form p input#submit
+{
+	width:100px;
+	line-height:150%;
+	height:30px;
+	background-color:#3EFF05;
+	color:#ffffff;
+	font-weight:bold;
+	margin-top:1%;
+}
+}
+
+.bank_details {
+  font-weight: bold;
+  text-align: center;
+}
+.social {
+  position: fixed;
+  margin-left: 2%;
+  margin-top: 6%;
+}
+
+.donate_btn
+{
+	margin:0 40%;
+}
+
+/* Footer */
+footer p
+{
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	padding:1%;
+}
+
+/* Mobile Version */
+@media handheld, only screen and (max-width: 500px) 
+{
+	#wrapper
+	{
+		width:80%;
+	}
+	
+	.container .row
+	{
+		padding:0px;
+		margin:0px;
+	}
+	
+	#logo img
+	{
+		height:70px;
+	}
+	
+	#menu li
+	{
+		width:100%;
+	}
+	
+	#menu li a
+	{
+		font-size:18px;
+		font-weight:bold;
+		padding:2px;
+	}
+	
+	.social
+	{
+		display:none;
+	}
+	
+	.donate_btn
+	{
+		margin:0 25%;
+	}
+	
+	section h1, section p
+	{
+		margin:2%;
+	}
+	
+	/* Contact Form */
+	#form p input, #form p textarea
+	{
+		width:100%;
+		margin:0;
+	}
+	
+	#form p
+	{
+		text-align:left;
+	}
+}
