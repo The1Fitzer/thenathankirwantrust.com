@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Nathan Kirwan Trust Homepage</title>
+			
+			<link href="css/style-contact.css" rel="stylesheet" type="text/css" media="screen" />
+			
+			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script src="js/backstretch.js"></script>
+		</head>
+		<body>
+			<div class="social">
+				<div>
+				   <form target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr">
+					<input type="hidden" value="_s-xclick" name="cmd">
+					<input type="hidden" value="CQN74L5FC2R38" name="hosted_button_id">
+					<input type="hidden" value="http://nathankirwantrust.com/thankyou.html/" name="return">
+					<input type="image" border="0" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">
+					<img width="1" height="1" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="">
+				   </form>
+				</div>
+			  </div>
+			<script>
+				$.backstretch("images/background.png");
+			</script>
+			<div id="wrapper">
+				<header>
+					<div class="container">
+						<div class="row threecol last">
+							<div id="logo">
+								<img src="images/banner.png" alt="The Nathan Kirwan Trust Logo and picture banner" />
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row threecol last">
+							<ul id="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="nathan.html">Nathan's Blog</a></li>
+								<li><a href="event.html">Events</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="donate.html">Donate</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<section>
+					<div class="container">
+						<div class="row threecol last" style="height:50px; background:#ddd;">
+						</div>
+					</div><br/><br/>
+					<div class="container">
+						<div class="row threecol last">
+							<h1>Let us know your thoughts!</h1>
+							<p>We would love to hear any ideas, comments or fundraising suggestions that you may have.</p>
+							<form action="post" id="form">
+							<p>
+								<label>Name </label>
+								<input type="text" id="name" required placeholder="Please fill in your name here" />
+							</p>
+							<p>
+								<label>Email Address </label>
+								<input type="email" id="email" required placeholder="Please fill in your email address here" />
+							</p>
+							<p>
+								<label>Subject </label>
+								<input type="text" id="subject" required placeholder="Subject of message" />
+							</p>
+							<p>
+								<label>Message </label>
+								<textarea rows="6" cols="40" id="message" placeholder="Please fill in your message here"></textarea>
+							</p>
+							<p>
+								<input type="submit" id="submit" value="Send" />
+							</p>
+							</form>
+
+						</div>
+					</div>
+					
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row threecol last">
+							<p>&copy; 2013 The Nathan Kirwan Trust</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</body>
+	</html>
